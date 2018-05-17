@@ -12,35 +12,80 @@
 }
 
 body {
-  background-color: black;
+  background-color: #05000F;
+}
+
+#sticky {
+  width: 100%;
+  position: fixed;
+  font-size: 1em;
+  top: 0;
+  z-index: 1;
+  opacity: .7;
+}
+
+nav, header {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: #d6e1e7;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: .5em 5em 0 0;
+}
+
+ul {
+  color: #d6e1e7;
+  line-height: 1.5em;
 }
 
 header img {
   position: relative;
-  opacity: .7;
+  opacity: .6;
   filter: grayscale(200%);
-  /*filter:brightness(200%);*/
   background: rgba(255, 0, 240, 0.5);
   width: 100%;
   z-index: -1;
   top: 0;
-  height: 100vh;
-
+  margin-bottom:25em;
 }
 
 header h1 {
-  position: absolute;
+  position: fixed;
   text-align: right;
   color: white;
-  font-family: Cinzel;
+  font-family: 'Cinzel';
   color: #d6e1e7;
-  letter-spacing: 1.3em;
+  letter-spacing: 1em;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.2em;
   width: 100%;
-  top: 6em;
+  top: 4em;
+  right: 1em;
 }
 
+h2 {
+  font-family: 'Cinzel';
+  color: #d6e1e7;
+  font-size: 1.6em;
+  text-align: center;
+  opacity: .8;
+}
+
+#about {
+  height: 80vh;
+  z-index: 28;
+  padding-bottom: 0;
+}
+
+.fadeScroll i {
+  height: 400em;
+}
 
 #about, #media {
   display: flex;
@@ -50,25 +95,26 @@ header h1 {
   text-align: center;
 }
 
-#about img {
-  width: 25%;
-  height: 300px;
-  margin: 0 auto;
-  float: left;
-  opacity: .5;
-  margin: 1em;
-  border-radius: 30px;
+#media {
+  margin-bottom:25em;
 }
 
-#about img:hover {
+.fadeScroll {
+  color: white;
+  width: 25%;
+  opacity: .5;
+  margin: 2em 2em 0 3em;
+}
+
+.fadeScroll:hover {
   opacity: 1;
   transition: 0.5s;
 }
 
 p {
+  padding-left: 2em;
   color: #d6e1e7;
-  float: right;
-  width: 60%;
+  width: 55%;
   line-height: 1.5em;
   font-size: 1.5em;
 }
@@ -76,12 +122,12 @@ p {
 #media i {
   text-align: center;
   color: #d6e1e7;
-  margin: 2em 4em;
+  margin: 0 4em 2em 4em;
   font-size: 2em;
-  opacity: .8;
+  opacity: .5;
 }
 
-i:hover {
+#media i:hover {
   opacity: 1;
   transition: 0.5s;
 }
