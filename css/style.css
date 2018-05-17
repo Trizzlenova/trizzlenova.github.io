@@ -78,14 +78,9 @@ h2 {
 }
 
 #about {
-  height: 80vh;
-  z-index: 28;
-  padding-bottom: 0;
+  height: 70vh;
 }
 
-.fadeScroll i {
-  height: 400em;
-}
 
 #about, #media {
   display: flex;
@@ -93,10 +88,11 @@ h2 {
   width: 100%;;
   margin: 0 auto;
   text-align: center;
+
 }
 
 #media {
-  margin-bottom:25em;
+  margin-bottom:30em;
 }
 
 .fadeScroll {
@@ -104,6 +100,7 @@ h2 {
   width: 25%;
   opacity: .5;
   margin: 2em 2em 0 3em;
+  padding-bottom: 0;
 }
 
 .fadeScroll:hover {
@@ -111,6 +108,9 @@ h2 {
   transition: 0.5s;
 }
 
+.fadeScroll i {
+  /*height: 400em;*/
+}
 p {
   padding-left: 2em;
   color: #d6e1e7;
@@ -120,6 +120,7 @@ p {
 }
 
 #media i {
+  padding-top: 0;
   text-align: center;
   color: #d6e1e7;
   margin: 0 4em 2em 4em;
@@ -130,4 +131,32 @@ p {
 #media i:hover {
   opacity: 1;
   transition: 0.5s;
+}
+
+#projects {
+  padding-bottom: 25em;
+}
+
+footer h1 {
+  position: absolute;
+  text-align: left;
+  color: white;
+  font-family: 'Cinzel';
+  color: #333137;
+  letter-spacing: 1em;
+  font-weight: bold;
+  font-size: 2.2em;
+  width: 100%;
+  left: 1.1em;
+}
+
+footer img {
+  position: relative;
+  opacity: .6;
+  filter: grayscale(200%);
+  background: rgba(255, 0, 240, 0.5);
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  heigth: 100vh;
 }
