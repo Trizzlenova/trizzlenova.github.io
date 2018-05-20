@@ -10,7 +10,7 @@ $(document).on('scroll', function(){
     var offset = $(this).offset().top;
 
     if(currPos > offset) {
-      $(this).css('opacity', 1 - (currPos - offset) / 200)
+      $(this).css('opacity', 1 - (currPos - offset) / 300);
     }
   })
 })
@@ -27,11 +27,23 @@ $(".fadeScroll").slick({
   nextArrow: false
 });
 
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 650);
+    return false;
+});
 
 
+// Play a music note for each picture
+// that you scroll over. Need to create
+// an object library for each image
+// I also need to find a js music library
 
-Play a music note for each picture
-that you scroll over. Need to create
-an object library for each image
-I also need to find a js music library
 
+//
+
+// $('#projects img').on('mouseenter', function(){
+//   var sound = new Audio('sounds/example note.wav');
+//   sound.play();
+// };

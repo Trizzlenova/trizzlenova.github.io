@@ -17,6 +17,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+  <!-- Howler -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.12/howler.core.min.js"></script>
   <!-- Slick -->
  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/latest/slick.min.js" defer></script>
   <!-- Javascript -->
@@ -26,8 +28,8 @@
   <div id="sticky">
     <nav>
         <ul>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#aboutNav">ABOUT</a></li>
+          <li><a href="#projectsNav">PROJECTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
@@ -38,7 +40,8 @@
     <img src="images/seattleheader.jpeg">
   </header>
   <main>
-      <h2>ABOUT</h2>
+    <div id="aboutNav"></div>
+      <h2 id="yo">ABOUT</h2>
     <div id="about" class='fader'>
       <div class="fadeScroll">
         <img src="images/ugMug.jpg"/>
@@ -49,12 +52,7 @@
         <img src="images/fatjesus.jpg"/>
       </div>
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        My name is Troy. My mom tells me I'm a cool dude. I like listening to 2000's pop (Britney Spears OMG!), long walks on the beach, and I absolutely love listening. My passions are rescuing baby dolphins and chewing up food for baby birds... and engineering. If you want to take a walk and listen to great music, hit up this "cool dude".
       </p>
     </div>
     <div id="media">
@@ -63,23 +61,49 @@
       <i class="fab fa-instagram"></i>
       <i class="fab fa-facebook-square"></i>
     </div>
+    <div id="projectsNav"></div>
     <h2>PROJECTS</h2>
-    <div id="projects"></div>
-  </main>
-    <div id="contact" class="box">
-    <div class="comment">
-      <h2>get in touch</h2>
-      <input type="text" placeholder="name" id="first">
-      <input type="email" placeholder="email" id="second">
+    <div id="projects">
+      <div id="col1">
+        <img src="images/project1.png">
+        <img src="images/project4.png">
+        <img src="images/project6.png">
+      </div>
+      <div id="col2">
+        <img src="images/project5.png">
+        <img src="images/project2.png">
+        <img src="images/project9.png">
+      </div>
+      <div id="col3">
+        <img src="images/project8.png">
+        <img src="images/project3.png">
+        <img src="images/project7.jpg">
+      </div>
     </div>
-    <textarea type="text" placeholder="comment"></textarea>
-    <button type="submit" value="submit" id="submit" row="30">SUBMIT</button>
+    <h2>get in touch</h2>
+    <div id="info">
+      <div id="contact" class="box">
+      <!-- <div class="comment"> -->
+        <input type="text" placeholder="First Name" id="first">
+        <input type="text" placeholder="Last Name" id="last">
+        <input type="email" placeholder="Email" id="email">
+      <!-- </div> -->
+        <textarea type="text" placeholder="Comment" id="text"></textarea>
+        <button type="submit" value="submit" id="submit" row="30">SUBMIT</button>
+      </div>
+      <div id="secondHalf">
+        <a href="http://stuffnotthings.com/post/118803619794/smokesteamsporessparkles"><img src="https://78.media.tumblr.com/7f86ea5197ede64dd56f225157de359b/tumblr_no9728iK0W1rbbq1fo2_500.gif"/>
+        </a>
+        <i class="fas fa-coffee"></i>
+      </div>
+    </div>
   </div>
+  </main>
   <footer>
     <nav>
-      <h1>TROY SWAYZEE</h1>
+      <!-- <h1>TROY SWAYZEE</h1> -->
       <img src="images/sf_footer.png">
-      <span>&copy;2016 Sarah Holden</span>
+      <span>&copy;2018 Troy Swayzee</span>
     </nav>
   </footer>
 </body>
