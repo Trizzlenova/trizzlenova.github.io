@@ -17,14 +17,23 @@ $(document).on('scroll', function(){
 
 // console.log("works!")
 
-$(".fadeScroll").slick({
-  slidesToShow: 1,
+// $(".fadeScroll").slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   speed: 1000,
+//   fade: true,
+//   arrows: true,
+//   dots: false,
+// });
+
+$('.fadeScroll').slick({
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
-  speed: 1000,
-  fade: true,
-  prevArrow: false,
-  nextArrow: false
+  autoplaySpeed: 2000,
+  dots: false,
+  arrows: false
 });
 
 $('a').click(function(){
@@ -44,6 +53,7 @@ $('a').click(function(){
 //
 
 // $('#projects img').on('mouseenter', function(){
-//   var sound = new Audio('sounds/example note.wav');
+//   console.log("hover")
+//   var sound = new Audio('sounds/exampleNote.wav');
 //   sound.play();
-// };
+// });
