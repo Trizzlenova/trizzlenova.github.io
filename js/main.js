@@ -69,7 +69,14 @@ $(document).ready(function() {
       $('#space h1').append(response.title);
       $('#space h3').append(response.date);
       $('#space p').append(response.explanation);
-      $('#spacePic').attr('src', response.url);
+      if(response.media_type === "video") {
+        $('#spacePic').css('display', 'none');
+        $("#spaceVid").attr('src', response.url);
+        console.log(response.url);
+      } else {
+        $('#spaceVid').css('display', 'none');
+        $('#spacePic').attr('src', response.url);
+      }
     }
   });
 })
