@@ -1,4 +1,13 @@
 // ---------------------------------
+// Navigation Bar
+// ---------------------------------
+
+$('#hamburger').on('click', function(){
+  $('#hamburger').css('display', 'none');
+  $('#sticky').css('display','block');
+});
+
+// ---------------------------------
 // Header Fade
 // ---------------------------------
 
@@ -32,7 +41,6 @@ $('a').click(function(){
 
 $('#projects img').on('mouseenter', function() {
   $(this).toggleClass('blur');
-  $(this).show('alt')
 })
 
 // ---------------------------------

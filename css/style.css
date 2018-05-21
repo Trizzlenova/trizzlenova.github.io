@@ -20,11 +20,26 @@ body {
 /*-----------------------------*/
 
 #sticky {
+  display: none;
   width: 100%;
   position: fixed;
   font-size: 1em;
   top: 0;
   z-index: 1;
+  opacity: .5;
+  overflow:hidden;
+}
+
+#hamburger {
+  width: 100%;
+  text-align: right;
+  right: 2em;
+  z-index: 2;
+  position: fixed;
+  top: 1em;
+  color: white;
+  display: block;
+  font-size: 2em;
   opacity: .7;
 }
 
@@ -181,6 +196,15 @@ p {
   float: right;
 }
 
+#projects span {
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5em;
+  padding-left: 2.5em;
+  position: absolute;
+}
+
 /*-----------------------------*/
 /* API Section*/
 /*-----------------------------*/
@@ -204,6 +228,16 @@ p {
   width: 55%;
   float: right;
   margin: 0 auto;
+}
+
+#space h1 {
+  font-size: 2em;
+}
+
+#space h3 {
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  text-decoration: underline;
 }
 
 #space h1, #space h3{
@@ -365,7 +399,7 @@ span {
 }
 
 /*-----------------------------*/
- /*Image Blur*/
+ /* Image Blur */
 /*https://codepen.io/upslon/pen/XKjZJo*/
 /*-----------------------------*/
 
@@ -377,3 +411,84 @@ span {
   filter: blur(10px);
   opacity: 0.6;
 }
+
+/*-----------------------------*/
+ /* Media Query */
+/*-----------------------------*/
+
+@media screen and (max-width: 1000px){
+  header h1, footer h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 955px){
+  #space {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+  }
+  #spaceDesc {
+    width: 100%;
+  }
+  #spaceVid {
+    height: 320px;
+    padding-top: 1em;
+  }
+  #media img {
+    margin-right: 2em;
+    float: center;
+}
+
+@media screen and (max-width: 900px){
+  #hamburger {
+    font-size: 1.2em;
+  }
+  header h1, footer h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  #spaceDesc p {
+    font-size: .8em;
+  }
+  #media img {
+  height: 1.7em;
+  padding: .5em;
+  margin: 2em .5em;
+  }
+}
+
+@media screen and (max-width: 720px){
+  header h1, footer h1 {
+    font-size: 1.3em;
+  }
+  #info {
+  display: flex;
+  flex-direction: column;
+  font-size: .8em;
+  }
+  .fadeScroll img {
+    width: 1.8em;
+    height: 1.8em;
+  }
+  .fadeScroll i {
+    width: 1.8em;
+    height: 1.8em;
+  }
+}
+
+
