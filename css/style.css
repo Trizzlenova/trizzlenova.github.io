@@ -15,6 +15,10 @@ body {
   background-color: #05000F;
 }
 
+/*-----------------------------*/
+/* Navigation/Header Section*/
+/*-----------------------------*/
+
 #sticky {
   width: 100%;
   position: fixed;
@@ -42,6 +46,7 @@ nav ul li {
 ul {
   color: #d6e1e7;
   line-height: 1.5em;
+  z-index: 0;
 }
 
 header img {
@@ -60,7 +65,7 @@ header h1 {
   text-align: right;
   color: white;
   font-family: 'Cinzel';
-  color: #ffff7f;
+  color: #d6e1e7;
   letter-spacing: 1em;
   font-weight: bold;
   font-size: 2.2em;
@@ -69,12 +74,17 @@ header h1 {
   right: 1em;
 }
 
+/*-----------------------------*/
+/* About Section*/
+/*-----------------------------*/
+
 #about, #media {
   display: flex;
   flex-direction: row;
   width: 100%;;
-  margin: 2em auto;
+  margin: 2em auto 0;
   text-align: center;
+  z-index: 6;
 }
 
 #images {
@@ -97,10 +107,11 @@ h2 {
   color: #d6e1e7;
   font-size: 1.8em;
   text-align: center;
-  opacity: .6;
-  background-color: #0E1A1E;
+  opacity: 1;
+  background-color: #2f4556;
   /*text-decoration: underline;*/
   letter-spacing: 1em;
+
 }
 
 .fadeScroll {
@@ -108,17 +119,19 @@ h2 {
   width: 55%;
   margin: 1em auto;
   float:left;
-  opacity: .5;
-}
-
-.fadeScroll:hover, #media:hover {
-  opacity: 1;
-  transition: 0.5s;
+  opacity: .8;
 }
 
 .fadeScroll i {
   font-size: 3em;
 }
+
+.fadeScroll img {
+  margin: 0 auto;
+  width: 3em;
+  height: 3em;
+}
+
 
 p {
   color: #d6e1e7;
@@ -129,11 +142,15 @@ p {
   padding-right: 4em;
 }
 
+/*-----------------------------*/
+/* Media Section*/
+/*-----------------------------*/
+
 #media {
-  opacity: .5;
   /*margin-bottom:30em;*/
   background-color: #abb7bd;
-  margin-bottom: 30em;
+  margin-bottom: 15em;
+  margin-top: 0;
 }
 
 #media a {
@@ -144,38 +161,19 @@ p {
   font-size: 2.6em;
   background-color: #abb7bd;
   margin: .3em auto;
-
 }
 
 #media img {
   width: 30%;
-  /*color: white;*/
+  margin: .12em auto;
 }
 
-
-.fa-linkedin-in:hover, .fa-facebook-square:hover {
-  color: lightblue;
-  transition: 0.5s;
-}
-
-.fa-github:hover {
-  color: red;
-  transition: 0.5s;
-}
-
-.fa-instagram:hover{
-  color: pink;
-  transtion: 0.5s;
-}
-
-#hammer {
-  margin: 0 auto;
-  width: 100%;
-  opacity: .12;
-}
+/*-----------------------------*/
+/* Project Section*/
+/*-----------------------------*/
 
 #projects {
-  padding-bottom: 35em;
+  padding-bottom: 15em;
   display: flex;
   flex-direction: row;
   margin: .5em auto;
@@ -188,7 +186,7 @@ p {
 }
 
 #projects img:hover {
-  border: 1px solid #d8b2d8;
+  border: 2px solid #d8b2d8;
   opacity: 1;
   transition: 1.5s;
 }
@@ -223,11 +221,62 @@ p {
   padding: .3em;
 }
 
+/*-----------------------------*/
+/* API Section*/
+/*-----------------------------*/
+
+#space {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  padding-top: 5em;
+  padding-bottom: 20em;
+}
+
+#spaceDesc {
+  width: 45%;
+  float: left;
+  margin: 0 auto;
+}
+
+#spaceHalf {
+  width: 55%;
+  float: right;
+  margin: 0 auto;
+}
+
+#space h1, #space h3{
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#spaceDesc p {
+  width: 100%;
+  font-size: 1.1em;
+  padding-left: 2.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#spacePic {
+  width: 100%;
+  float: right;
+  padding: 0 3em;
+  opacity: .8;
+}
+
+
+/*-----------------------------*/
+/* Info Section*/
+/*-----------------------------*/
+
 #info {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding-bottom: 25em;
+  padding-bottom: 15em;
 }
 
 .box {
@@ -285,6 +334,10 @@ p {
   color: #7c0303;
 }
 
+/*-----------------------------*/
+/* Footer Section*/
+/*-----------------------------*/
+
 footer {
   margin: 0 auto;
 }
@@ -300,6 +353,7 @@ footer h1 {
   font-size: 2.2em;
   width: 100%;
   left: 1.1em;
+  z-index: 1;
 }
 
 footer img {
@@ -309,6 +363,9 @@ footer img {
   background: rgba(255, 0, 240, 0.5);
   width: 100%;
   z-index: -1;
-  bottom: 0;
-  heigth: 100vh;
+  height: 80vh;
+}
+
+span {
+  color: white;
 }
