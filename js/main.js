@@ -48,9 +48,9 @@ $('a').click(function(){
 // Image Zoom
 // ---------------------------------
 
-$('#projects img').on('mouseenter', function() {
-  $(this).toggleClass('zoom');
-});
+// $('#projects img').on('mouseenter', function() {
+//   $(this).toggleClass('zoom');
+// });
 
 // ---------------------------------
 // Music Idea
