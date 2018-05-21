@@ -28,7 +28,6 @@ body {
   top: 0;
   z-index: 1;
   opacity: .5;
-  overflow:hidden;
 }
 
 #hamburger {
@@ -168,7 +167,8 @@ p {
   padding-bottom: 15em;
   display: flex;
   flex-direction: column;
-  margin: .5em auto;
+  /*margin: .5em auto;*/
+  margin: 0 auto;
 }
 
 #projects img {
@@ -176,11 +176,13 @@ p {
   padding: 1.2em;
   width: 100%;
   opacity: .6;
+  text-align: center;
+  margin: 0 auto;
 }
-
+/*
 #col1, #col2, #col3 {
   width: 32%;
-  /*margin: 1em auto;*/
+  margin: 1em auto;
 }
 
 #col1 {
@@ -190,15 +192,15 @@ p {
 #col3 {
   float: right;
 }
-
-#projects span {
+/**/
+/*#projects span {
   font-size: 1em;
   width: 100%;
   margin: 0 auto;
   padding-top: 5em;
   padding-left: 2.5em;
   position: absolute;
-}
+}*/
 
 .slickGallery {
   width: 80%;
@@ -213,10 +215,10 @@ p {
 
 #projects p {
   font-size: 1.5em;
-  width: 90%;
+  width: 100%;
   text-align: center;
   color: #d6e1e7;
-  margin: 0 auto;
+  margin: 0 auto;;
 }
 
 /*-----------------------------*/
@@ -447,6 +449,9 @@ span {
 }
 
 @media screen and (max-width: 955px){
+  header img {
+    margin-bottom: 4em;
+  }
   #space {
     display: flex;
     flex-direction: column;
@@ -480,11 +485,13 @@ span {
   #spaceDesc p {
     font-size: .8em;
   }
+
   #media img {
   height: 1.7em;
   padding: .5em;
   margin: 2em .5em;
   }
+
   #projects p {
     font-size: 1.2em;
   }
@@ -495,6 +502,7 @@ span {
     font-size: 1.1em;
     text-align: center;
     letter-spacing: .5em;
+    right: 0;
   }
 
   nav, header {
@@ -503,16 +511,18 @@ span {
 
   #hamburger {
     width: 100%;
-    right: .5em;
-    top: 1.5em;
+    right: .8em;
+    top: 1.8em;
+    opacity: .5;
   }
 
   #sticky {
-    font-size: .8em;
+    font-size: .6em;
+    text-align: center;
   }
 
   nav ul li {
-  padding: .5em 2em 0 0;
+  padding: .5em 1em 0 0;
 }
 
   #about, #projects {
@@ -527,22 +537,35 @@ span {
     font-size: .6em;
   }
 
+  #projects p {
+    padding-right: 0;
+    width: 80%;
+  }
+
   .fadeScroll {
     width: 80%;
     margin: .5em auto;
   }
+
   .fadeScroll img {
     width: 1em;
     height: 1em;
   }
+
   .fadeScroll i {
     font-size: 1em ;
   }
 
+  .slickGallery {
+  width: 80%;
+  margin: 0 auto;
+}
+
   .slickGallery img{
-    width: 4em;
-    height: 6em;
-    margin: .5em auto;
+    width: 7em;
+    height: 5em;
+    margin: .5em 0;
+    padding: 0;
   }
 
   #space {
@@ -578,6 +601,10 @@ span {
   padding-bottom: 5.5em;
   }
 
+  #footer img {
+    width: 95%;
+  }
+
   .box {
   font-size: .8em;
   width: 100%;
@@ -588,17 +615,17 @@ span {
   height: 25vh;
   padding-top: .5em;
   }
-
+/*
   #secondHalf img {
   float: right;
-  height: 9em;
+  height: 4.5em;
   padding-right: 5em;
-  margin: -1em auto;
+  margin: 0em auto;
   opacity: .15;
-  }
+  }*/
 
-  #secondHalf i {
-    font-size: 10em;
+  #secondHalf i, #secondHalf img {
+    display: none;
   }
 
   nav img {
@@ -611,8 +638,8 @@ span {
   }
 
   #media a {
-    margin-right: 3em;
-    margin-top: -2em;
+    margin-right: 4em;
+    margin-top: -3.8em;
     text-align: center;
     font-size: .5em;
   }
@@ -622,6 +649,10 @@ span {
     height: 2em;
     padding: .5em;
     margin: 2em .5em;
+  }
+
+  span {
+    font-size: .5em;
   }
 }
 

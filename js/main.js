@@ -12,7 +12,7 @@ $('#hamburger').on('click', function(){
 // ---------------------------------
 
 $(window).scroll(function(){
-  $("header").css("opacity", 1 - $(window).scrollTop() / 560);
+  $("header").css("opacity", 1 - $(window).scrollTop() / 300);
 });
 
 // ---------------------------------
@@ -32,7 +32,7 @@ $('.slickGallery').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   dots: false,
   arrows: false
 });
