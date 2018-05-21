@@ -1,6 +1,14 @@
+// ---------------------------------
+// Header Fade
+// ---------------------------------
+
 $(window).scroll(function(){
   $("header").css("opacity", 1 - $(window).scrollTop() / 560);
 });
+
+// ---------------------------------
+// Carousel
+// ---------------------------------
 
 $('.fadeScroll').slick({
   slidesToShow: 4,
@@ -18,6 +26,18 @@ $('a').click(function(){
     return false;
 });
 
+// ---------------------------------
+// Image Blur
+// ---------------------------------
+
+$('#projects img').on('mouseenter', function() {
+  $(this).toggleClass('blur');
+  $(this).show('alt')
+})
+
+// ---------------------------------
+// Music Idea
+// ---------------------------------
 
 // Play a music note for each picture
 // that you scroll over. Need to create
@@ -30,25 +50,27 @@ $('a').click(function(){
 //   sound.play();
 // });
 
+
+
+// ---------------------------------
+// NASA API
+// ---------------------------------
+
 var url = "https://api.nasa.gov/planetary/apod?api_key=taN7yRSSTWnRu4IeLrwlfaZJuD70ldfEFMyIdXm7";
 
-
 $(document).ready(function() {
-  console.log("Let's get coding!");
   $.ajax({
     method: 'GET',
     url: url,
     success: function (response) {
-      console.log(response);
-      console.log(response.date);
-      console.log(response.url);
+      // console.log(response);
+      // console.log(response.date);
+      // console.log(response.url);
       $('#space h1').append(response.title);
       $('#space h3').append(response.date);
       $('#space p').append(response.explanation);
       $('#spacePic').attr('src', response.url);
     }
   });
-    // $('spacePic').attr('src', response.url);
-    // $('space h1').text(response.title);
 })
 

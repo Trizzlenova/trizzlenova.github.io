@@ -32,7 +32,7 @@ nav, header {
   text-align: right;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: #d6e1e7;
 }
@@ -57,7 +57,7 @@ header img {
   width: 100%;
   z-index: -1;
   top: 0;
-  margin-bottom:25em;
+  margin-bottom:15em;
 }
 
 header h1 {
@@ -78,13 +78,28 @@ header h1 {
 /* About Section*/
 /*-----------------------------*/
 
+h2 {
+  font-family: 'Cinzel';
+  color: #d6e1e7;
+  font-size: 1.8em;
+  text-align: center;
+  opacity: 1;
+  background-color: #2f4556;
+  letter-spacing: 1em;
+  margin-bottom: 3em;
+}
+
 #about, #media {
   display: flex;
   flex-direction: row;
   width: 100%;;
+  z-index: 6;
+}
+
+#about {
+  padding-bottom: 10em;
   margin: 2em auto 0;
   text-align: center;
-  z-index: 6;
 }
 
 #images {
@@ -93,25 +108,11 @@ header h1 {
   width: 50%;
 }
 
-
 #mug {
-  width: 60%;
+  width: 66%;
   height: 65%;
   margin: 2em auto 1em auto;
   border-radius: 6px;
-}
-
-
-h2 {
-  font-family: 'Cinzel';
-  color: #d6e1e7;
-  font-size: 1.8em;
-  text-align: center;
-  opacity: 1;
-  background-color: #2f4556;
-  /*text-decoration: underline;*/
-  letter-spacing: 1em;
-
 }
 
 .fadeScroll {
@@ -142,31 +143,6 @@ p {
   padding-right: 4em;
 }
 
-/*-----------------------------*/
-/* Media Section*/
-/*-----------------------------*/
-
-#media {
-  /*margin-bottom:30em;*/
-  background-color: #abb7bd;
-  margin-bottom: 15em;
-  margin-top: 0;
-}
-
-#media a {
-  width: 100%;
-  padding-top: 0;
-  text-align: center;
-  color: white;
-  font-size: 2.6em;
-  background-color: #abb7bd;
-  margin: .3em auto;
-}
-
-#media img {
-  width: 30%;
-  margin: .12em auto;
-}
 
 /*-----------------------------*/
 /* Project Section*/
@@ -180,6 +156,7 @@ p {
 }
 
 #projects img {
+  position: relative;
   padding: 1.2em;
   width: 100%;
   opacity: .6;
@@ -204,23 +181,6 @@ p {
   float: right;
 }
 
-/*h2:last-of-type {
-  font-family: 'Cinzel';
-  color: #d6e1e7;
-  font-size: 1.6em;
-  text-align: left;
-  padding-left: 13em;
-  opacity: .6;
-  background-color: #0E1A1E;;
-}*/
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  margin: .5em auto;
-  padding: .3em;
-}
-
 /*-----------------------------*/
 /* API Section*/
 /*-----------------------------*/
@@ -230,8 +190,8 @@ p {
   margin: 0 auto;
   text-align: center;
   height: 100vh;
-  padding-top: 5em;
-  padding-bottom: 20em;
+  /*padding-top: 5em;*/
+  padding-bottom: 18em;
 }
 
 #spaceDesc {
@@ -247,7 +207,7 @@ p {
 }
 
 #space h1, #space h3{
-  color: white;
+  color: #d6e1e7;
   width: 100%;
   margin: 0 auto;
 }
@@ -255,7 +215,7 @@ p {
 #spaceDesc p {
   width: 100%;
   font-size: 1.1em;
-  padding-left: 2.5em;
+  padding-left: 2.9em;
   text-align: center;
   margin: 0 auto;
 }
@@ -277,6 +237,13 @@ p {
   flex-direction: row;
   margin: 0 auto;
   padding-bottom: 15em;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: .5em auto;
+  padding: .3em;
 }
 
 .box {
@@ -326,12 +293,39 @@ p {
   color: #d6e1e7;
   float: right;
   opacity: .4;
+  position: relative;
 }
 
 #secondHalf i:hover {
   opacity: 1;
   transition: 3s;
   color: #7c0303;
+}
+/*-----------------------------*/
+/* Media Section*/
+/*-----------------------------*/
+
+#media {
+  position: absolute;
+  margin-top: 3.8em;
+  width: 16%;
+  float: left;
+  opacity: .8;
+}
+
+#media a {
+  width: 15%;
+  margin-right: 5em;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#media img {
+  float: left;
+  height: 2em;
+  padding: .5em;
+  margin: 2em .5em;
 }
 
 /*-----------------------------*/
@@ -347,7 +341,7 @@ footer h1 {
   text-align: left;
   color: white;
   font-family: 'Cinzel';
-  color: #333137;
+  color: #2f4556;
   letter-spacing: 1em;
   font-weight: bold;
   font-size: 2.2em;
@@ -358,7 +352,7 @@ footer h1 {
 
 footer img {
   position: relative;
-  opacity: .6;
+  opacity: .7;
   filter: grayscale(200%);
   background: rgba(255, 0, 240, 0.5);
   width: 100%;
@@ -368,4 +362,18 @@ footer img {
 
 span {
   color: white;
+}
+
+/*-----------------------------*/
+ /*Image Blur*/
+/*https://codepen.io/upslon/pen/XKjZJo*/
+/*-----------------------------*/
+
+.blur{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  opacity: 0.6;
 }
