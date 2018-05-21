@@ -153,8 +153,8 @@ p {
   color: #d6e1e7;
   width: 55%;
   line-height: 1.5em;
-  font-size: 1.5em;
-  padding-top: 5em;
+  font-size: 1.8em;
+  padding-top: 4em;
   padding-right: 4em;
 }
 
@@ -166,7 +166,7 @@ p {
 #projects {
   padding-bottom: 15em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: .5em auto;
 }
 
@@ -175,12 +175,6 @@ p {
   padding: 1.2em;
   width: 100%;
   opacity: .6;
-}
-
-#projects img:hover {
-  border: 2px solid #d8b2d8;
-  opacity: 1;
-  transition: 1.5s;
 }
 
 #col1, #col2, #col3 {
@@ -203,6 +197,25 @@ p {
   padding-top: 5em;
   padding-left: 2.5em;
   position: absolute;
+}
+
+.slickGallery {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slickGallery img {
+  margin: 0 auto;
+  width: 8em;
+  height: 12em;
+}
+
+#projects p {
+  font-size: 1.5em;
+  width: 90%;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
 }
 
 /*-----------------------------*/

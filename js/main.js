@@ -28,6 +28,15 @@ $('.fadeScroll').slick({
   arrows: false
 });
 
+$('.slickGallery').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: false,
+  arrows: false
+});
+
 $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -36,12 +45,12 @@ $('a').click(function(){
 });
 
 // ---------------------------------
-// Image Blur
+// Image Zoom
 // ---------------------------------
 
 $('#projects img').on('mouseenter', function() {
-  $(this).toggleClass('blur');
-})
+  $(this).toggleClass('zoom');
+});
 
 // ---------------------------------
 // Music Idea
