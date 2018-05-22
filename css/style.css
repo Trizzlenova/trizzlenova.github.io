@@ -74,6 +74,7 @@ header img {
   top: 0;
   margin-bottom:15em;
   height: 100vh;
+  top: 0;
 }
 
 header h1 {
@@ -231,8 +232,8 @@ h2 {
   margin: 0 auto;
   text-align: center;
   height: 100vh;
-  /*padding-top: 5em;*/
   padding-bottom: 18em;
+  color: white;
 }
 
 #spaceDesc {
@@ -263,12 +264,14 @@ h2 {
   margin: 0 auto;
 }
 
-#spaceDesc p {
+#space h5 {
   width: 100%;
   font-size: 1.1em;
   padding-left: 2.9em;
   text-align: center;
   margin: 0 auto;
+  padding-top: 2em;
+  color: white;
 }
 
 #spacePic {
@@ -492,7 +495,7 @@ span {
   }
 
   #spaceDesc p {
-    font-size: .8em;
+    /*font-size: .8em;*/
   }
 
   #media img {
@@ -515,6 +518,10 @@ span {
     left: 0;
     width: 98%;
     margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: 3em;
   }
 
   nav, header {
@@ -571,6 +578,14 @@ span {
     margin: 0 auto;
   }
 
+  #about p {
+    font-size: 1em;
+  }
+
+  #projects p {
+    margin-top: 3em;
+  }
+
   .slickGallery img{
     width: 8em;
     height: 6.7em;
@@ -596,7 +611,7 @@ span {
   }
 
   #spaceDesc p {
-    font-size: 0;
+    /*font-size: 0;*/
     float: center;
   }
 
@@ -620,10 +635,6 @@ span {
   font-size: .8em;
   padding-bottom: 5.5em;
   height: 100vh;
-  }
-
-  #footer img {
-    width: 95%;
   }
 
   .box {
