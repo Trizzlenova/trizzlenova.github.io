@@ -613,7 +613,7 @@ span {
   }
 
   #spaceDesc p {
-    /*font-size: 0;*/
+    font-size: 0;
     float: center;
   }
 
