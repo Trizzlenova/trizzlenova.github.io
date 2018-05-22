@@ -614,6 +614,7 @@ span {
 
   #spaceDesc p {
     font-size: 0;
+    display: none;
     float: center;
   }
 
