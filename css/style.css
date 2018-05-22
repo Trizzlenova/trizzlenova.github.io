@@ -619,9 +619,7 @@ span {
   }
 
   .slickGallery img{
-    width: 8em;
-    height: 6.7em;
-    margin: 0 auto;
+    height: 10em;
     padding: 0;
   }
 
