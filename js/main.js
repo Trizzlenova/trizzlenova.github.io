@@ -85,7 +85,7 @@ $(document).ready(function() {
       // console.log(response.url);
       $('#space h1').append(response.title);
       $('#space h3').append(response.date);
-      $('#space h5').append(response.explanation);
+      $('#space p').append(response.explanation);
       if(response.media_type === "video") {
         $('#spacePic').css('display', 'none');
         $("#spaceVid").attr('src', response.url);
