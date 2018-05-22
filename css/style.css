@@ -677,12 +677,9 @@ span {
   }
 
   #media {
-    float: center;
     display: flex;
     flex-direction: column;
-    margin-top: 5.5em;
-    margin-left: 1.6em;
-    margin-right: 0;
+    margin: 5.5em 0 0 0;
     width: 100%;
   }
 
@@ -692,11 +689,11 @@ span {
   }
 
   #media img {
-    float: left;
+    float: center;
     height: 2em;
-    width: 5em;
-    padding: .2em;
-    margin: .3em auto;
+    width: 6em;
+    margin: 0.7em 6em;
+    opacity: 1;
   }
   span {
     font-size: .5em;
