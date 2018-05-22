@@ -237,7 +237,7 @@ h2 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  height: 130vh;
   padding-bottom: 18em;
   color: white;
 }
@@ -271,7 +271,7 @@ h2 {
 }
 
 #space p {
-  width: 100%;
+  width: 90%;
   font-size: 1.5em;
   padding-left: 1em;
   text-align: center;
@@ -281,7 +281,7 @@ h2 {
 }
 
 #spacePic {
-  width: 100%;
+  width: 90%;
   float: right;
   padding: 0 3em;
   opacity: .8;
@@ -692,7 +692,7 @@ span {
     float: center;
     height: 2em;
     width: 6em;
-    margin: 0.7em 6em;
+    margin: 0.3em 6em;
     opacity: 1;
   }
   span {
