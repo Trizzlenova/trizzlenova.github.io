@@ -45,6 +45,7 @@ body {
 
 header {
   height: 100vh;
+  width: 100%;
 }
 
 nav, header {
@@ -83,16 +84,16 @@ header img {
 
 header h1 {
   position: fixed;
-  text-align: right;
+  text-align: left;
   color: white;
   font-family: 'Cinzel';
   color: #d6e1e7;
   letter-spacing: 1em;
   font-weight: bold;
   font-size: 2.2em;
-  width: 100%;
+  width: 60%;
   top: 4em;
-  right: 1em;
+  left: 1em;
 }
 
 /*-----------------------------*/
@@ -368,15 +369,15 @@ h2 {
 #media {
   position: absolute;
   margin-top: 3.8em;
-  width: 16%;
-  float: left;
+  width: 80%;
+  float: right;
   opacity: .8;
 }
 
 #media a {
   width: 15%;
-  margin-right: 5em;
-  text-align: center;
+  margin-left: 6em;
+  text-align: right;
   font-size: 1.8em;
 }
 
@@ -406,7 +407,7 @@ h2 {
 }
 
 #testimonials h4 {
-  width: 80%;
+  /*width: 80%;*/
   font-size: 1.6em;
   text-align: center;
   margin-left: 20em;
@@ -429,7 +430,7 @@ footer h1 {
   letter-spacing: 1em;
   font-weight: bold;
   font-size: 2.2em;
-  width: 100%;
+  width: 80%;
   left: 1.1em;
   z-index: 1;
 }
@@ -441,7 +442,7 @@ footer img {
   background: rgba(255, 0, 240, 0.5);
   width: 100%;
   z-index: -1;
-  height: 80vh;
+  height: 100vh;
 }
 
 span {
@@ -717,7 +718,7 @@ span {
   }
 
   #media {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     margin: 3em 0 0 1.5em;
     width: 100%;
