@@ -80,15 +80,12 @@ $(document).ready(function() {
     method: 'GET',
     url: url,
     success: function (response) {
-      // console.log(response);
-      // console.log(response.date);
-      // console.log(response.url);
       $('#space h1').append(response.title);
       $('#space h3').append(response.date);
       $('#space p').append(response.explanation);
       if(response.media_type === "video") {
-        $('#spacePic').css('display', 'none');
-        $("#spaceVid").attr('src', response.url);
+        $('#spaceHead').css('display', 'none');
+        $("#spaceHead").attr('src', response.url);
         console.log(response.url);
       } else {
         $('#spaceVid').css('display', 'none');

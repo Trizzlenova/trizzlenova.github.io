@@ -21,7 +21,7 @@ body {
 /*-----------------------------*/
 
 #sticky {
-  display: none;
+  display: block;
   width: 100%;
   position: fixed;
   font-size: 1em;
@@ -31,14 +31,14 @@ body {
 }
 
 #hamburger {
-  width: 100%;
+  width: 96%;
   text-align: right;
   padding-right: 1em;
   z-index: 2;
   position: fixed;
-  top: 1em;
+  top: 2em;
   color: white;
-  display: block;
+  display: none;
   font-size: 2em;
   opacity: .7;
 }
@@ -69,31 +69,74 @@ ul {
   z-index: 0;
 }
 
-header img {
+#head {
+  z-index: -1;
   position: relative;
-  opacity: .6;
-  filter: grayscale(200%);
+  opacity: .8;
   background: rgba(255, 0, 240, 0.5);
   width: 100%;
   z-index: -1;
   top: 0;
   margin-bottom:15em;
-  height: 100vh;
+  height: 80vh;
   top: 0;
+  overflow: hidden;
 }
 
-header h1 {
-  position: fixed;
-  text-align: left;
+#profilePic {
+  z-index: 1;
+  position: absolute;
+  left: -100px;
+  top: 3.5em;
+  height: 550px;
+  transition: 1s;
+  opacity: 0;
+}
+
+#nasa {
+  z-index: 2;
+  font-size: 2em;
+  color: blue;
+  font-family: 'Shadows Into Light', cursive;
+  right: 5em;
+}
+
+header:hover #profilePic {
+  transition: 1s;
+  left: 2em;
+  opacity: 1;
+}
+
+#spacePic {
+  position: relative;
+  width: 60%;
+  opacity: 0;
+  top: 2em;
+  right: -100px;
+  transition: 2s;
+}
+
+header:hover #spacePic {
+  transition: 2s;
+  margin-right: 6em;
+  opacity: 1;
+}
+
+#name {
   color: white;
   font-family: 'Cinzel';
   color: #d6e1e7;
   letter-spacing: 1em;
   font-weight: bold;
-  font-size: 2.2em;
-  width: 60%;
-  top: 4em;
-  left: 1em;
+  font-size: 2.5em;
+  width: 70%;
+  transition: 1s;
+  margin-left: 8em;
+}
+
+header h1 :hover #name {
+  right: 2em;
+  transition: 2s;
 }
 
 /*-----------------------------*/
@@ -279,13 +322,6 @@ h2 {
   margin: 0 auto;
   padding-top: 2em;
   line-height: 1.3em;
-}
-
-#spacePic {
-  width: 90%;
-  float: right;
-  padding: 0 3em;
-  opacity: .8;
 }
 
 
