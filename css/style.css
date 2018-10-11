@@ -109,7 +109,7 @@ header:hover #profilePic {
 
 #spacePic {
   position: relative;
-  width: 60%;
+  width: 50%;
   opacity: 0;
   top: 2em;
   right: -100px;
@@ -118,7 +118,7 @@ header:hover #profilePic {
 
 header:hover #spacePic {
   transition: 2s;
-  margin-right: 6em;
+  margin-right: 10em;
   opacity: 1;
 }
 
@@ -421,7 +421,7 @@ h2 {
   float: left;
   height: 2em;
   padding: .5em;
-  margin: 2em .5em;
+  margin: 2em 0;
 }
 
 /*-----------------------------*/
