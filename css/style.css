@@ -173,10 +173,10 @@ h2 {
   width: 50%;
 }
 
-#mug {
-  width: 66%;
-  height: 65%;
-  margin: 2em auto 1em auto;
+#leftMug {
+  height: 100vh;
+  left: 0;
+  margin: 2em auto 1em 0;
   border-radius: 6px;
 }
 
@@ -218,8 +218,14 @@ h2 {
   padding-bottom: 15em;
   display: flex;
   flex-direction: column;
-  /*margin: .5em auto;*/
   margin: 0 auto;
+}
+
+#rightMug {
+  height: 100vh;
+  float: right;
+  margin: 2em 0 1em auto;
+  border-radius: 6px;
 }
 
 #projects img {
