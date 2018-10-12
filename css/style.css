@@ -151,7 +151,7 @@ h2 {
   opacity: 1;
   background-color: #2f4556;
   letter-spacing: 1em;
-  margin-bottom: 3em;
+  /*margin-bottom: 3em;*/
 }
 
 #about, #media {
@@ -176,7 +176,7 @@ h2 {
 #leftMug {
   height: 100vh;
   left: 0;
-  margin: 2em auto 1em 0;
+  margin: 0 auto 1em 0;
   border-radius: 6px;
 }
 
@@ -224,7 +224,7 @@ h2 {
 #rightMug {
   height: 100vh;
   float: right;
-  margin: 2em 0 1em auto;
+  margin: 0 0 1em auto;
   border-radius: 6px;
 }
 
@@ -260,14 +260,14 @@ h2 {
 }*/
 
 .slickGallery {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
 .slickGallery img {
   margin: 0 auto;
   width: 10em;
-  height: 15em;
+  height: 20em;
 }
 
 #projects p {

@@ -29,12 +29,13 @@ $('.fadeScroll').slick({
 });
 
 $('.slickGallery').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
+  infinite: true,
   autoplay: true,
   autoplaySpeed: 3000,
-  dots: false,
-  arrows: false
+  dots: true,
+  arrows: true,
+  fade: true,
+  cssEase: 'linear'
 });
 
 $('a').click(function(){
