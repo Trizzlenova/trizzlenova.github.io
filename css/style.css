@@ -165,14 +165,18 @@ h2 {
   padding-bottom: 10em;
   margin: 2em auto 0;
   text-align: center;
-  background-color: white;
+  background-color: #d1dce1;
   width: 100%;
 }
 
-#images {
+#imageSideOne, #imageSideTwo {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+#imageSideTwo {
+  float: right;
 }
 
 #leftMug {
@@ -185,10 +189,11 @@ h2 {
 #iphone {
   float: right;
   position: absolute;
+  /*background-color: blue;*/
 }
 
 .fadeScroll {
-  color: white;
+  color: black;
   width: 55%;
   margin: 1em auto;
   float:left;
