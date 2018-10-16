@@ -93,32 +93,42 @@ ul {
   opacity: 0;
 }
 
-#nasa {
-  z-index: 2;
-  font-size: 2em;
-  color: blue;
-  font-family: 'Shadows Into Light', cursive;
-  right: 5em;
-}
-
 header:hover #profilePic {
   transition: 1s;
   left: 2em;
   opacity: 1;
 }
 
-#spacePic {
-  position: relative;
-  width: 50%;
+#nasa {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5em;
+  color: #cef3f6;
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0 auto;
+  width: 100%;
   opacity: 0;
-  top: 2em;
+  -webkit-transform: rotate(-35deg);
+}
+
+header:hover #nasa {
+  opacity: 1;
+  transition: 3s;
+}
+
+#spacePic {
+  position: absolute;
+  width: 38%;
+  opacity: 0;
   right: -100px;
   transition: 2s;
+  margin-bottom: 2em;
 }
 
 header:hover #spacePic {
   transition: 2s;
-  margin-right: 10em;
+  margin-right: 14em;
   opacity: 1;
 }
 
@@ -130,7 +140,7 @@ header:hover #spacePic {
   font-weight: bold;
   font-size: 2.5em;
   width: 70%;
-  transition: 1s;
+  transition: 5s;
   margin-left: 8em;
 }
 
@@ -151,6 +161,7 @@ h2 {
   opacity: 1;
   background-color: #2f4556;
   letter-spacing: 1em;
+  z-index: 2;
   /*margin-bottom: 3em;*/
 }
 
@@ -162,21 +173,17 @@ h2 {
 }
 
 #about {
-  padding-bottom: 10em;
-  margin: 2em auto 0;
+  /*padding-bottom: 10em;*/
+  /*margin: 2em auto 0;*/
   text-align: center;
-  background-color: #d1dce1;
+  /*background-color: #d1dce1;*/
   width: 100%;
 }
 
 #imageSideOne, #imageSideTwo {
   display: flex;
   flex-direction: column;
-  width: 50%;
-}
-
-#imageSideTwo {
-  float: right;
+  width: 40%;
 }
 
 #leftMug {
@@ -186,28 +193,22 @@ h2 {
   border-radius: 6px;
 }
 
-#iphone {
-  float: right;
-  position: absolute;
-  /*background-color: blue;*/
-}
-
 .fadeScroll {
-  color: black;
-  width: 55%;
-  margin: 1em auto;
-  float:left;
+  color: #d6e1e7;
+  width: 100%;
+  margin: 10em;
   opacity: .8;
+  margin-left: 2em;
 }
 
 .fadeScroll i {
-  font-size: 3em;
+  font-size: 20em;
 }
 
 .fadeScroll img {
   margin: 0 auto;
   width: 3em;
-  height: 3em;
+  height: 20em;
 }
 
 
