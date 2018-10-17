@@ -241,6 +241,7 @@ h2 {
 }
 
 .columns {
+  margin-top: 1em;
   width: 70%;
 }
 
@@ -258,7 +259,7 @@ h2 {
 #col1 img, #col2 img {
   width: 15em;
   height: 15em;
-  margin: 1em;
+  margin: 2em 0 1em 3em;
 }
 
 #projects p {
